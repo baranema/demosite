@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  height: 600px;
+}
+
+body nav {
+  color: #fff;
+  background-color: #448CCB;
+}
+
+body nav #nav_content {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+
+body nav #nav_content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+body nav #nav_content li {
+  padding: 0 20px;
+}
+
+body nav #nav_content a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+body nav #nav_content a:hover {
+  color: #1E2123;
+}
+
+body nav #nav_content #links {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+body nav #nav_content #links #bigger-links li {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+body nav #nav_content #links #bigger-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+body nav #nav_content #links #bigger-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1E2123;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+body nav #nav_content #links #bigger-links .dropdown-content a {
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+body nav #nav_content #links #bigger-links .dropdown-content a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body nav #nav_content #links #bigger-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body nav #nav_content #links h1.logo {
+  text-transform: uppercase;
+  font-size: 27px;
+  padding: 0 20px;
+  margin-top: 15px;
+  font-weight: 100;
+}
+
+body nav #nav_content #links h1.logo strong {
+  font-weight: 800;
+}
+
+body nav #smaller-links {
+  font-size: 12px;
+}
+
+body nav #smaller-links li {
+  border-right: 1px solid white;
+}
+
+body nav #smaller-links li:last-child {
+  border-right: none;
+}
+
+body nav h2 {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
