@@ -28,27 +28,13 @@ body nav #nav_content {
 }
 
 body nav #nav_content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
   margin: 0;
 }
 
 body nav #nav_content li {
+  display: inline;
   padding: 0 20px;
-}
-
-body nav #nav_content a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: color .25s ease-in-out;
-  transition: color .25s ease-in-out;
-}
-
-body nav #nav_content a:hover {
-  color: #1E2123;
 }
 
 body nav #nav_content #links {
@@ -79,12 +65,16 @@ body nav #nav_content #links #bigger-links .dropdown {
 body nav #nav_content #links #bigger-links .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1E2123;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 155px;
   z-index: 1;
-  text-align: center;
+}
+
+body nav #nav_content #links #bigger-links .dropdown-content .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #1E2123;
 }
 
 body nav #nav_content #links #bigger-links .dropdown-content a {
@@ -93,6 +83,8 @@ body nav #nav_content #links #bigger-links .dropdown-content a {
   color: #fff;
   padding: 12px 16px;
   text-decoration: none;
+  background-color: #1E2123;
+  border: 5px solid #1E2123;
   display: block;
 }
 
@@ -131,5 +123,144 @@ body nav #smaller-links li:last-child {
 
 body nav h2 {
   display: block;
+}
+
+body a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+body a:hover {
+  color: #1E2123;
+}
+
+body #h-content {
+  margin: 6%;
+}
+
+body #h-content .header-content-1 {
+  background-color: #448CCB;
+  color: #fff;
+  float: left;
+  width: 29%;
+  margin-right: 3%;
+  padding: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  min-height: 100%;
+}
+
+body #h-content .header-content-1 h1 {
+  margin-top: 1em;
+}
+
+body #h-content .header-content-1 p {
+  margin-bottom: 8em;
+  font-weight: 400;
+  text-transform: none;
+}
+
+body #h-content .header-content-1 a.btn-primary {
+  font-size: 12px;
+  font-weight: 800;
+  float: right;
+  padding: 0.3em 0.7em;
+  border: 2px solid darkgray;
+}
+
+body #h-content .header-content-1 hr {
+  border: 4px solid white;
+  width: 20%;
+  margin: 1.5em 0;
+}
+
+body #h-content .header-content-2 {
+  background-color: #D7D7D7;
+  float: left;
+  width: 62%;
+  margin-left: 3%;
+  height: 100%;
+}
+
+body #h-content .header-content-2 img {
+  width: 100%;
+}
+
+body #h-content .header-content-2 #second-container-text {
+  padding: 2em;
+}
+
+body #h-content .header-content-2 #second-container-text p {
+  margin: 0.5em 0;
+}
+
+body #service-content {
+  width: 100%;
+  color: #fff;
+  background-color: #448CCB;
+  margin-top: 6%;
+  display: block;
+  float: left;
+}
+
+body #service-content p {
+  font-size: 16px;
+  margin: 0.5em 0 1.8em;
+}
+
+body #service-content h2 {
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+body #service-content .services-1 {
+  float: left;
+  width: 33.33333%;
+  padding: 6%;
+}
+
+body #service-content .services-2 {
+  float: left;
+  width: 66.66667%;
+  padding: 6%;
+}
+
+body #service-content .services-2 .service-content {
+  padding: 2em;
+  overflow: hidden;
+  color: #1E2123;
+  background-color: #fff;
+}
+
+body #service-content .services-2 .service-content .custom-list {
+  float: left;
+  width: 50%;
+}
+
+body #service-content .services-2 .service-content .custom-list ul li {
+  width: 80%;
+  list-style-type: none;
+  margin-top: 0.6em;
+  font-style: italic;
+  padding: 0.3em 0;
+  border-bottom: 1px solid #1E2123;
+}
+
+body #service-content .services-2 .service-content .service-content-text {
+  float: left;
+  width: 50%;
+}
+
+body #service-content .services-2 .service-content h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body #service-content .services-2 .service-content h4 {
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

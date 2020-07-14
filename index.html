@@ -7,62 +7,92 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <header class="showcase">
-        <div class="primary-container">
-            <nav>
-                <div id="nav_content">
-                    <ul id="smaller-links">
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Some Text</a></li>
-                        <li><a href="#">Another Item</a></li>
-                        <li><a href="#">One More</a></li>
-                        <li><a href="#">And Last One</a></li>
-                    </ul>
-                
-                    <div id="links">
-                        <h1 class="logo"><strong>Demo</strong>Site</h1>
-                        <ul id="bigger-links"></ulid>
-                            <li><a href="#">Home</a></li>
-                            <li>
-                                <div class="dropdown">
-                                    <a href="#" class="dropbtn">Service</a>
-                                    <div class="dropdown-content">
+    <header>
+        <nav>
+            <div id="nav_content">
+                <ul id="smaller-links">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Some Text</a></li>
+                    <li><a href="#">Another Item</a></li>
+                    <li><a href="#">One More</a></li>
+                    <li><a href="#">And Last One</a></li>
+                </ul>
+            
+                <div id="links">
+                    <h1 class="logo"><strong>Demo</strong>Site</h1>
+                    <ul id="bigger-links"></ulid>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Service</a>
+                                <div class="dropdown-content">
+                                    <div class="arrow-up"></div>
                                     <a href="#">All</a>
                                     <a href="#">Graphic</a>
                                     <a href="#">Design</a>
                                     <a href="#">Logo</a>
                                     <a href="#">Website</a>
-                                    </div>
                                 </div>
-                            </li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">About me</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-
-            <div class="showcase-content">
-                <div>
-                    <h1>Welcome</h1>
-                    <span></span>
-                    <p class="my-1">
-                        Sed laoreet magna at neque sollic-i-tudin, quis tristique ipsum per molestie. Class apt ent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum facilisis malesuada. Integer rhoncus laoreet velit
-                    </p>
-                    <a href="#" class="btn-primary">Learn More</a>
+            </div>
+        </nav>
+        <div id="h-content">
+            <div class="header-content-1">
+                <h1>Welcome</h1>
+                <hr>
+                <p>
+                    Sed laoreet magna at neque sollic-i-tudin, quis tristique ipsum per molestie. Class apt ent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum facilisis malesuada. Integer rhoncus laoreet velit
+                </p>
+                <a href="#" class="btn-primary">Learn More</a>
+            </div>
+            
+            <div class="header-content-2">
+                <img src="images/img.jpg" alt="">
+                <div id="second-container-text">
+                    <h2>UI/UX design</h2>
+                    <p>Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen elitinex placerat semper vitae et enim.</p>
+                    <p>Males uada est, nec convallis euis mod. Nam eleifen elitinex placerat.</p>
                 </div>
             </div>
         </div>
-        
-        <div class="second-container">
-            <img src="images/img.jpg" alt="">
-            <div id="second-container-text">
-                <h2>UI/UX design</h2>
-                <p>Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen elitinex placerat semper vitae et enim.
-                    Males uada est, nec convallis euis mod. Nam eleifen elitinex placerat.</p>
+            
+        <div id="service-content">
+            <div class="services-1">
+                <h2>Web Development</h2>
+                <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.</p>
+                <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.</p>
+            </div>
+
+            <div class="services-2">
+                <div class="service-header-text">
+                    <h2>Wireframe</h2>
+                    <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.</p>
+                </div>
+                <div class="service-content">
+                    <div class="custom-list">
+                        <h3>Custom List</h3>
+                        <h4>Some Heading</h4>
+                        <ul id="list">
+                            <li>mamamija</li>
+                            <li>mamamija</li>
+                            <li>mamamija</li>
+                        </ul>
+                    </div>
+                    <div class="service-content-text">
+                        <h3>Web Development</h3>
+                        <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus nisi.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
