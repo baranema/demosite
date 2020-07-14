@@ -2,7 +2,21 @@ $font-stack: 'Open Sans', sans-serif;
 $primary-blue: #448CCB;
 $my-black: #1E2123;
 $light-gray: #D7D7D7;
-$margin: 10em;
+
+// Set text color based on background
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return $my-black;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
 
 @mixin grid($cols) {
     float: left;
