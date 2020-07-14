@@ -11,41 +11,10 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="nav_content">
-                <ul class="smaller-links">
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Some Text</a></li>
-                    <li><a href="#">Another Item</a></li>
-                    <li><a href="#">One More</a></li>
-                    <li><a href="#">And Last One</a></li>
-                </ul>
-            
-                <div id="links">
-                    <h1 class="logo"><strong>Demo</strong>Site</h1>
-                    <ul class="bigger-links"></ulid>
-                        <li><a href="#">Home</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="#" class="dropbtn">Service</a>
-                                <div class="dropdown-content">
-                                    <div class="arrow-up"></div>
-                                    <a href="#">All</a>
-                                    <a href="#">Graphic</a>
-                                    <a href="#">Design</a>
-                                    <a href="#">Logo</a>
-                                    <a href="#">Website</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+   
+    <header></header>
+
+    <main>
         <div id="h-content">
             <div class="header-content-1">
                 <h1>Welcome</h1>
@@ -57,7 +26,7 @@
             </div>
             
             <div class="header-content-2">
-                <img src="images/img.jpg" alt="">
+                <img id="header-img" src="images/img.jpg" alt="">
                 <div id="second-container-text">
                     <h2>UI/UX design</h2>
                     <p>Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen elitinex placerat semper vitae et enim.</p>
@@ -93,6 +62,8 @@
             </div>
         </div>
 
+        <hr class="mobile_sep">
+
         <div id="contacts-content">
             <div class="contacts-header">
                 <h1>Contact</h1>
@@ -104,7 +75,7 @@
                 <p>Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.</p>
             </div>
 
-            <div class="contact-form">
+            <div id="contact-form">
                 <form>
                   <label for="fname">Name</label>
                   <input type="text" id="fname" name="firstname">
@@ -119,29 +90,8 @@
                 </form>
               </div>
         </div>
-        
-        <div id="footer">
-            <div class="footer-text">
-                <p>
-                Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.
-                Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec
-                </p>
-            </div>
+    </main>
 
-            <div class="footer-list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#">One More</a></li>
-                    <li><a href="#">And Last One</a></li>
-                </ul>
-                <p id="copyright">© <strong>demo</strong>site All right reserved</p>
-            </div>
-
-
-          </div>
-
-    </header>
+    <footer></footer>
 </body>
 </html>
