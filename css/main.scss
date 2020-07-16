@@ -468,10 +468,10 @@ body {
             h3 {
                 text-transform: uppercase;
                 margin: 2em auto 1em;
-                width: 20%;
                 padding: 0.6em;
                 color: $primary-blue;
-                border-bottom: 3px solid $my-black;
+                border-bottom: 1px solid $my-black;
+                text-align: center !important;
             }
 
             ul {
@@ -513,9 +513,13 @@ body {
             margin: 0 auto;
             overflow: hidden;
             width: 90vw;
-            height: 30vw;
-            img {
+
+            .img_wrap {
+                height: 30vw;
                 @include grid(3);
+                img {
+                    object-fit: cover;
+                }
             }
         }
         h1 {

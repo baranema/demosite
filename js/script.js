@@ -6,12 +6,11 @@ $(document).ready(function() {
     $(function load_footer(){
         $("footer").load("footer.html");
     });
-    
-    $(document).ready(function() {
+
+    if ($(window).width() > 900) {
         var leftHeight = $('.header-content-2').height();
         $('.header-content-1').css({'height':leftHeight});
-    });
-
+    } 
     $(document).ready(function() {
         var leftHeight = $('.header-content-2').height();
         $('.header-content-2').css({'height':leftHeight});
