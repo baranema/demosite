@@ -1,4 +1,4 @@
-$(document).ready(function() {  
+$(document).ready(function() {       
     $(function load_header(){
         $("header").load("header.html");
     });
@@ -21,8 +21,26 @@ $(document).ready(function() {
             $('#list').append("<li>" + data[i].title +  "</li"); 
         } 
     }); 
+    
+    $(document).on('click', ".mobile_icon", function () {
+        var s_links = document.querySelector('.smaller-links');
+        var b_links = document.querySelector('.bigger-links');
 
-    // services page
+        b_links.style.display = "block";
+        s_links.style.display = "block";
+
+        var y = document.querySelector('#drop_down');
+        $('.smaller-links').prependTo('#drop_down');
+        $('.bigger-links').prependTo('#drop_down');
+
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        } else {
+          y.style.display = "block";
+        }
+    });
+
+        // services page
     $.get('https://jsonplaceholder.typicode.com/posts', function(data) {
       var first = (data.length / 5) / 4;
       var sec = first * 2;
@@ -88,5 +106,16 @@ $(document).ready(function() {
         }
     });
 
+    /*function myFunction() {
+        alert("yas");
+        var x = document.getElementsByClassName("bigger-links");
+        var y = document.getElementsByClassName("smaller-links");
+
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }*/
 
 });

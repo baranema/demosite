@@ -1,3 +1,5 @@
+// My Media Queries
+
 @media(max-width: 1115px) {
     body {
         nav {
@@ -60,12 +62,33 @@
             overflow: hidden;
             position: relative;
 
-            .bigger-links, .smaller-links {
-                display: none;
+            #drop_down {
+                padding: 2em 0;
             }
 
-            #myLinks {
+            .bigger-links, .smaller-links {
                 display: none;
+
+                li {
+                    border-right: none;
+                }
+
+                .dropdown {
+                    padding: 2em 0;
+                    background-color: rgb(66, 66, 66);
+                    
+                    a { 
+                        background-color: rgb(66, 66, 66);
+                    }
+
+                    .dropdown-content {
+                        font-size: 90%;
+                    }
+                }
+
+                .dropbtn {
+                    border: none;
+                }
             }
 
             .mobile_icon {

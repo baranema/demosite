@@ -42,6 +42,25 @@ body a:hover {
   color: #1E2123;
 }
 
+body #drop_down {
+  display: none;
+  text-align: center;
+  background-color: #1E2123;
+  color: #fff;
+}
+
+body #drop_down ul li a {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 3.5vh;
+  font-size: 2.5vh;
+  font-weight: 600;
+  background-color: #1E2123;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  right: 0;
+}
+
 body header nav {
   background-color: #448CCB;
   color: #fff;
@@ -563,11 +582,27 @@ body #works-section h1 {
     overflow: hidden;
     position: relative;
   }
+  body #nav_content #drop_down {
+    padding: 2em 0;
+  }
   body #nav_content .bigger-links, body #nav_content .smaller-links {
     display: none;
   }
-  body #nav_content #myLinks {
-    display: none;
+  body #nav_content .bigger-links li, body #nav_content .smaller-links li {
+    border-right: none;
+  }
+  body #nav_content .bigger-links .dropdown, body #nav_content .smaller-links .dropdown {
+    padding: 2em 0;
+    background-color: #424242;
+  }
+  body #nav_content .bigger-links .dropdown a, body #nav_content .smaller-links .dropdown a {
+    background-color: #424242;
+  }
+  body #nav_content .bigger-links .dropdown .dropdown-content, body #nav_content .smaller-links .dropdown .dropdown-content {
+    font-size: 90%;
+  }
+  body #nav_content .bigger-links .dropbtn, body #nav_content .smaller-links .dropbtn {
+    border: none;
   }
   body #nav_content .mobile_icon {
     margin: 1em 1em 0 1em;

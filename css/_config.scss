@@ -18,6 +18,7 @@ $light-gray: #D7D7D7;
     color: set-text-color($color);
 }
 
+// Custom grid mixin
 @mixin grid($cols) {
     float: left;
     width: (100% / $cols);
